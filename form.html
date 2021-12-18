@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribe Form</title>
+    <link rel="stylesheet" href="./task7.css">
+</head>
+<style>
+    fieldset {
+        width: fit-content;
+        border: 3px solid black;
+    }
+
+    .input-field {
+        display: inline-block;
+        padding: 5px;
+    }
+
+    .input-field input {
+        display: block;
+        border: none;
+        border-bottom: 2px solid black;
+    }
+
+    .address,
+    .subscribe {
+        display: block;
+    }
+
+    .input-address {
+        width: 95%;
+    }
+
+    .input-city,
+    .input-state,
+    .input-zipcode {
+        width: 115px;
+    }
+
+    input .input-subscribe {
+        /* display: inline; */
+    }
+
+    .input-title h2 {
+        background-color: red;
+        color: white;
+        padding: 0 5px;
+    }
+</style>
+
+<body>
+    <!-- Design form shown in the link (http://evc-cit.info/cit040/formguide/card_0.png) -->
+    <section>
+        <article>
+            <fieldset>
+                <div class="input-title">
+                    <h2>Yes!I want to subscribe to <i>Mag-O-Zine</i></h2>
+                </div>
+                <div class="input-field">
+                    <input type="text" name="fname" id="fname">
+                    <label for="fname" name="fname">Firstname</label>
+                </div>
+                <div class="input-field">
+                    <input type="text" name="lname" id="lname">
+                    <label for="lname" name="lname">Lastname</label>
+                </div>
+                <div class="input-field address">
+                    <input class="input-address" type="text" name="address" id="address">
+                    <label for="address" name="address">Address</label>
+                </div>
+                <div class="input-field">
+                    <input class="input-city" type="text" name="city" id="city">
+                    <label for="city" name="city">City</label>
+                </div>
+                <div class="input-field">
+                    <input class="input-state" type="text" name="state" id="state">
+                    <label for="state" name="state">State</label>
+                </div>
+                <div class="input-field">
+                    <input class="input-zipcode" type="number" name="zipcode" id="zipcode">
+                    <label for="zipcode" name="zipcode">Zip code</label>
+                </div>
+                <div class="input-field subscribe">
+                    <h4 style="display: contents;">Subscribe for :</h4>
+                    <div style="display: contents;"> <input class="input-subscribe" style="display: inline;"
+                            type="radio" name="subscribe" id="one-year-subscribe">
+                        <strong><label for="one-year-subscribe">1 year($19.95)</label></strong>
+                    </div>
+                    <div style="display: contents;"><input class="input-subscribe" style="display: inline;" type="radio"
+                            name="subscribe" id="two-year-subscribe">
+                        <strong><label for="two-year-subscribe">2 year($35.00)</label></strong>
+                    </div>
+                </div>
+                <div class="input-field">
+                    <strong>
+                        <h4 style="margin: auto;">Send me more information about:</h4>
+                    </strong>
+                    <div class="info-computer">
+                        <input style="display: inline;" type="checkbox" name="info-computer" id="info-computer">
+                        <label for="info-computer" name="info-computer">Computer-Zine</label>
+                    </div>
+                    <div class="info-fishing">
+                        <input style="display: inline;" type="checkbox" name="info-fishing" id="info-fishing">
+                        <label for="info-fishing" name="info-fishing">Fishing-Zine</label>
+                    </div>
+                    <div class="cat-o-fishing">
+                        <input style="display: inline;" type="checkbox" name="cat-o-fishing" id="cat-o-fishing">
+                        <label for="cat-o-fishing" name="cat-o-fishing">Cat-O-Zine</label>
+                    </div>
+
+
+                </div>
+
+            </fieldset>
+        </article>
+    </section>
+    <br /><br />
+
+</body>
+
+</html>
